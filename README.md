@@ -102,13 +102,16 @@ python python_core/data/empiar_loader.py
 # 3. Run Head-to-Head Comparative Benchmark (Pillars A, B, and C)
 python python_core/models/benchmark_runner.py --epochs 3
 
-# 4. Evaluate Gold-Standard Half-Map FSC (0.143 Cutoff) Resolution along z
+# 4. Joint Pose Refinement via Lie Algebra so(3) (Resolves Angular Noise)
+python python_core/models/pose_refinement.py
+
+# 5. Evaluate Gold-Standard Half-Map FSC (0.143 Cutoff) Resolution along z
 python python_core/models/fsc_evaluator.py
 
-# 5. Solve Minimum Free Energy Path (MFEP) along the latent manifold
+# 6. Solve Minimum Free Energy Path (MFEP) along the latent manifold
 python python_core/models/trajectory_solver.py
 
-# 6. Interactive Exploration
+# 7. Interactive Exploration
 # Open notebooks/cryomorph_literature_and_data_explorer.ipynb in VS Code / Antigravity
 ```
 
