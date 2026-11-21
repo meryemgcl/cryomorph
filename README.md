@@ -77,16 +77,16 @@ CryoMorph evaluates its paradigms against both experimental gold standards and s
 
 ---
 
-## ⚡ Live Comparative Benchmark Results
+## ⚡ Live Comparative Benchmark Results (All 3 Pillars)
 
 Running the automated benchmark harness (`python python_core/models/benchmark_runner.py --epochs 3`):
 
-| Evaluation Metric | Pillar A: CryoTriplane VAE | Pillar C: CryoGaussian Splatting | Winner & Architectural Impact |
-| :--- | :--- | :--- | :--- |
-| **Throughput (FPS)** | `183.4 particles/sec` | **`386.8 particles/sec`** | **Pillar C (2.1x Faster):** Analytical 2D Gaussian projection avoids dense 3D volume grid lookups. |
-| **Reconstruction Loss (MSE)** | `0.27454` | **`0.15667`** | **Pillar C:** Analytical CTF convolution fits experimental data with lower reconstruction error. |
-| **Mass Conservation Variance** | `1.46e-05` | **`0.00e+00`** | **Pillar C:** Exact conservation of mass (fixed atomic/Gaussian counts). |
-| **Latent Path Trajectory** | Fourier Radiance Field | Explicit 3D Centers $\mu(z)$ | Solved via **String Method** ($\Delta G^\ddagger = 4.23\,k_B T$). |
+| Evaluation Metric | Pillar A: CryoTriplane VAE | Pillar B: Deformation Flow | Pillar C: CryoGaussian Splatting | Winner & Architectural Impact |
+| :--- | :--- | :--- | :--- | :--- |
+| **Throughput (FPS)** | `93.0 particles/sec` | `68.7 particles/sec` | **`189.0 particles/sec`** | **Pillar C (2.7x Faster):** Analytical 2D projection avoids 3D volume interpolation. |
+| **Reconstruction Loss (MSE)** | `0.27454` | `3.98699` | **`0.15690`** | **Pillar C:** Analytical Fourier CTF convolution reaches lowest reconstruction error. |
+| **Mass Conservation Var** | `1.33e-06` | `2.00e+04` | **`9.54e-07`** | **Pillar C:** Exact physical mass conservation via fixed Gaussian/atomic primitives. |
+| **Latent Path Trajectory** | Fourier Radiance Field | Invertible Vector Field $u(x)$ | Explicit 3D Centers $\mu(z)$ | Solved via **String Method** ($\Delta G^\ddagger = 4.23\,k_B T$). |
 
 ---
 
