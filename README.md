@@ -96,16 +96,19 @@ Running the automated benchmark harness (`python python_core/models/benchmark_ru
 # 1. Generate Synthetic Benchmark Dataset (500 particles with known ground-truth z)
 python python_core/data/synthetic_generator.py
 
-# 2. Run Head-to-Head Comparative Benchmark (Pillars A, B, and C)
+# 2. Test Real-World Cryo-EM Data Pipeline (RELION .star & .mrcs Binary Ingestion)
+python python_core/data/empiar_loader.py
+
+# 3. Run Head-to-Head Comparative Benchmark (Pillars A, B, and C)
 python python_core/models/benchmark_runner.py --epochs 3
 
-# 3. Evaluate Gold-Standard Half-Map FSC (0.143 Cutoff) Resolution along z
+# 4. Evaluate Gold-Standard Half-Map FSC (0.143 Cutoff) Resolution along z
 python python_core/models/fsc_evaluator.py
 
-# 4. Solve Minimum Free Energy Path (MFEP) along the latent manifold
+# 5. Solve Minimum Free Energy Path (MFEP) along the latent manifold
 python python_core/models/trajectory_solver.py
 
-# 5. Interactive Exploration
+# 6. Interactive Exploration
 # Open notebooks/cryomorph_literature_and_data_explorer.ipynb in VS Code / Antigravity
 ```
 
