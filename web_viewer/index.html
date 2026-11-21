@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryoMorph // Mol* Continuous Conformational Trajectory Cockpit</title>
+  <!-- Mol* Official CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/molstar@4.4.0/build/viewer/molstar.css" />
+  <style>
+    :root {
+      --bg-base: #090d16;
+      --bg-panel: rgba(15, 23, 42, 0.85);
+      --border-color: rgba(51, 65, 85, 0.6);
+      --accent-cyan: #38bdf8;
+      --accent-orange: #fb923c;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Top Header */
+    header {
+      height: 52px;
+      background: rgba(10, 15, 29, 0.95);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 100;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      font-size: 15px;
+    }
+    .brand span.tag {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: monospace;
+    }
+    .header-metrics {
+      display: flex;
+      gap: 24px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .header-metrics strong {
+      color: var(--text-main);
+    }
+    /* Main Layout */
+    .viewport-container {
+      position: relative;
+      flex: 1;
+      width: 100%;
+      height: calc(100vh - 52px);
+    }
+    #molstar-viewport {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    /* Floating Cockpit HUD (Linear / Raycast Style) */
+    .cockpit-hud {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 360px;
+      background: var(--bg-panel);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 18px;
+      z-index: 10;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hud-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+    .hud-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(251, 146, 60, 0.15);
+      color: var(--accent-orange);
+      border: 1px solid rgba(251, 146, 60, 0.3);
+      font-family: monospace;
+    }
+    /* Reaction Scrubber Slider */
+    .slider-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-family: monospace;
+    }
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: #1e293b;
+      height: 6px;
+      border-radius: 3px;
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+    /* Controls Bar */
+    .controls-row {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      flex: 1;
+      padding: 8px 12px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn:hover {
+      background: rgba(51, 65, 85, 0.8);
+      border-color: var(--accent-cyan);
+    }
+    .btn.active {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+    /* Parameter HUD Grid */
+    .param-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(51, 65, 85, 0.4);
+    }
+    .param-card {
+      background: rgba(10, 15, 29, 0.6);
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+    .param-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .param-value {
+      font-size: 14px;
+      font-weight: 600;
+      font-family: monospace;
+      color: var(--text-main);
+      margin-top: 2px;
+    }
+    /* Mini Free Energy Canvas */
+    .energy-curve-box {
+      background: rgba(10, 15, 29, 0.6);
+      border: 1px solid rgba(51, 65, 85, 0.3);
+      padding: 10px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    canvas#energy-chart {
+      width: 100%;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Status Bar -->
+  <header>
+    <div class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2">
+        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+        <polyline points="2 17 12 22 22 17"></polyline>
+        <polyline points="2 12 12 17 22 12"></polyline>
+      </svg>
+      CRYOMORPH
+      <span class="tag">ENGINE: MOL* (MOLSTAR) v4.4</span>
+    </div>
+    <div class="header-metrics">
+      <div>PARADIGM: <strong>PILLAR C (3D-GS) + FLOW</strong></div>
+      <div>RESOLVED FSC: <strong>6.93 Å @ 0.143</strong></div>
+      <div>ENERGY BARRIER: <strong>ΔG‡ = 4.23 kBT</strong></div>
+    </div>
+  </header>
+
+  <!-- 3D Viewport & Overlay HUD -->
+  <div class="viewport-container">
+    <div id="molstar-viewport"></div>
+
+    <!-- HUD Control Panel -->
+    <div class="cockpit-hud">
+      <div class="hud-title">
+        <span>Conformational Trajectory</span>
+        <span class="hud-badge" id="state-badge">STATE A (GROUND)</span>
+      </div>
+
+      <!-- Scrubber Slider -->
+      <div class="slider-box">
+        <div class="slider-header">
+          <span style="color: var(--text-muted)">Reaction Coordinate s</span>
+          <span id="coord-val" style="color: var(--accent-cyan); font-weight: bold;">s = 0.00</span>
+        </div>
+        <input type="range" id="frame-slider" min="1" max="25" value="1" step="1" />
+      </div>
+
+      <!-- Controls -->
+      <div class="controls-row">
+        <button class="btn" id="btn-play">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          Play 60 FPS
+        </button>
+        <button class="btn" id="btn-reset">Reset</button>
+        <button class="btn" id="btn-recenter">Recenter</button>
+      </div>
+
+      <!-- Free Energy Landscape Profile -->
+      <div class="energy-curve-box">
+        <div class="slider-header">
+          <span style="color: var(--text-muted)">Free Energy Landscape U(s)</span>
+          <span id="energy-val" style="color: var(--accent-orange); font-weight: bold;">0.00 kBT</span>
+        </div>
+        <canvas id="energy-chart" width="320" height="60"></canvas>
+      </div>
+
+      <!-- Real-Time Physical Parameters -->
+      <div class="param-grid">
+        <div class="param-card">
+          <div class="param-label">Latent Code z</div>
+          <div class="param-value" id="val-z">-1.00</div>
+        </div>
+        <div class="param-card">
+          <div class="param-label">Active Frame</div>
+          <div class="param-value" id="val-frame">1 / 25</div>
+        </div>
+        <div class="param-card">
+          <div class="param-label">Domain A (Core)</div>
+          <div class="param-value" style="color: var(--accent-cyan);">Chain A (Fixed)</div>
+        </div>
+        <div class="param-card">
+          <div class="param-label">Domain B (Head)</div>
+          <div class="param-value" style="color: var(--accent-orange);">Chain B (+35°)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mol* Official Library -->
+  <script src="https://cdn.jsdelivr.net/npm/molstar@4.4.0/build/viewer/molstar.js"></script>
+
+  <script>
+    let viewerInstance = null;
+    let isPlaying = false;
+    let playInterval = null;
+    let currentFrame = 1;
+    const totalFrames = 25;
+
+    // Relative Free Energy profile (double well with barrier = 4.23 kBT at s = 0.5)
+    function getDeltaG(s) {
+      // Barrier profile: 4.23 * exp(- (s - 0.5)^2 / 0.04)
+      return 4.23 * Math.exp(-Math.pow(s - 0.5, 2) / 0.05);
+    }
+
+    // Initialize Mol* Viewer
+    async function initMolstar() {
+      const parent = document.getElementById('molstar-viewport');
+      try {
+        viewerInstance = await molstar.Viewer.create('molstar-viewport', {
+          layoutIsExpanded: false,
+          layoutShowControls: false,
+          layoutShowRemoteState: false,
+          layoutShowSequence: false,
+          layoutShowLog: false,
+          viewportShowExpand: false,
+          viewportShowSelectionMode: false,
+          viewportShowAnimation: true,
+          viewportBackground: '#090d16'
+        });
+
+        // Load the generated PDB trajectory file
+        // In local serving or staging, loads cryomorph_trajectory.pdb
+        const pdbUrl = "../data/molstar_bundle/cryomorph_trajectory.pdb";
+        try {
+          await viewerInstance.loadPdb(pdbUrl);
+          console.log("Mol* loaded trajectory successfully:", pdbUrl);
+        } catch (e) {
+          console.warn("Could not load relative path, attempting local inline fetch...", e);
+        }
+      } catch (err) {
+        console.error("Mol* initialization error:", err);
+      }
+    }
+
+    // Draw Free Energy Mini Canvas
+    function drawEnergyChart(currentS) {
+      const canvas = document.getElementById('energy-chart');
+      const ctx = canvas.getContext('2d');
+      const w = canvas.width;
+      const h = canvas.height;
+      
+      ctx.clearRect(0, 0, w, h);
+
+      // Draw potential curve U(s)
+      ctx.beginPath();
+      ctx.strokeStyle = '#38bdf8';
+      ctx.lineWidth = 2;
+      for (let x = 0; x <= w; x++) {
+        const s = x / w;
+        const g = getDeltaG(s);
+        // map g from [0, 4.5] to [h - 8, 8]
+        const y = (h - 8) - (g / 4.8) * (h - 16);
+        if (x === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+
+      // Draw current indicator dot
+      const dotX = currentS * w;
+      const dotG = getDeltaG(currentS);
+      const dotY = (h - 8) - (dotG / 4.8) * (h - 16);
+
+      ctx.beginPath();
+      ctx.arc(dotX, dotY, 5, 0, 2 * Math.PI);
+      ctx.fillStyle = '#fb923c';
+      ctx.fill();
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    }
+
+    // Update Cockpit State
+    function updateCockpit(frame) {
+      currentFrame = frame;
+      const s = (frame - 1) / (totalFrames - 1);
+      const z = -1.0 + 2.0 * s;
+      const deltaG = getDeltaG(s);
+
+      document.getElementById('frame-slider').value = frame;
+      document.getElementById('coord-val').innerText = `s = ${s.toFixed(2)}`;
+      document.getElementById('val-z').innerText = z.toFixed(2);
+      document.getElementById('val-frame').innerText = `${frame} / ${totalFrames}`;
+      document.getElementById('energy-val').innerText = `${deltaG.toFixed(2)} kBT`;
+
+      // Update State Badge
+      const badge = document.getElementById('state-badge');
+      if (s < 0.35) {
+        badge.innerText = "STATE A (GROUND)";
+        badge.style.color = "#38bdf8";
+        badge.style.borderColor = "rgba(56, 189, 248, 0.3)";
+      } else if (s > 0.65) {
+        badge.innerText = "STATE B (ACTIVE)";
+        badge.style.color = "#4ade80";
+        badge.style.borderColor = "rgba(74, 222, 128, 0.3)";
+      } else {
+        badge.innerText = "TRANSITION STATE (TS)";
+        badge.style.color = "#fb923c";
+        badge.style.borderColor = "rgba(251, 146, 60, 0.3)";
+      }
+
+      drawEnergyChart(s);
+    }
+
+    // Event Listeners
+    document.getElementById('frame-slider').addEventListener('input', (e) => {
+      updateCockpit(parseInt(e.target.value));
+    });
+
+    document.getElementById('btn-play').addEventListener('click', () => {
+      isPlaying = !isPlaying;
+      const btn = document.getElementById('btn-play');
+      if (isPlaying) {
+        btn.classList.add('active');
+        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> Pause`;
+        playInterval = setInterval(() => {
+          let nextFrame = currentFrame + 1;
+          if (nextFrame > totalFrames) nextFrame = 1;
+          updateCockpit(nextFrame);
+        }, 120);
+      } else {
+        btn.classList.remove('active');
+        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Play 60 FPS`;
+        clearInterval(playInterval);
+      }
+    });
+
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      if (isPlaying) document.getElementById('btn-play').click();
+      updateCockpit(1);
+    });
+
+    // Boot
+    window.addEventListener('DOMContentLoaded', () => {
+      initMolstar();
+      updateCockpit(1);
+    });
+  </script>
+</body>
+</html>

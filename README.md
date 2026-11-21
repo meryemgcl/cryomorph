@@ -111,8 +111,12 @@ python python_core/models/fsc_evaluator.py
 # 6. Solve Minimum Free Energy Path (MFEP) along the latent manifold
 python python_core/models/trajectory_solver.py
 
-# 7. Interactive Exploration
-# Open notebooks/cryomorph_literature_and_data_explorer.ipynb in VS Code / Antigravity
+# 7. Export Multi-Model 3D Trajectory for Mol* (molstar)
+python python_core/models/trajectory_exporter.py
+
+# 8. Interactive Exploration
+# Open web_viewer/index.html in browser for the Mol* 3D Cockpit
+# Or inspect notebooks/cryomorph_literature_and_data_explorer.ipynb
 ```
 
 ---
