@@ -1,0 +1,2123 @@
+{
+  "hitCount": 3894,
+  "nextCursorMark": "AoIIQLhUgyg1NjA4NzU1Mg==",
+  "results": [
+    {
+      "id": "43027771",
+      "source": "MED",
+      "pmid": "43027771",
+      "pmcid": "PMC13762918",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13762918"
+        ]
+      },
+      "doi": "10.3390/ijms27219519",
+      "title": "Towards Integrative and Multi-Scale Imaging with Recent Advances in Cryo-Electron Tomography.",
+      "authorString": "Corroyer-Dulmont S, Masson C, Quemin ERJ.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Corroyer-Dulmont S",
+            "lastName": "Corroyer-Dulmont",
+            "firstName": "Simon",
+            "initials": "S",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-3964-5474"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Okinawa Institute of Science and Technology (OIST), 1919-1 Tancha, Onna-son, Kunigami-gun, Okinawa 904-0495, Japan."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Masson C",
+            "lastName": "Masson",
+            "firstName": "Chlo\u00e9",
+            "initials": "C",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Okinawa Institute of Science and Technology (OIST), 1919-1 Tancha, Onna-son, Kunigami-gun, Okinawa 904-0495, Japan."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Quemin ERJ",
+            "lastName": "Quemin",
+            "firstName": "Emmanuelle R J",
+            "initials": "ERJ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute for Integrative Biology of the Cell (I2BC), CEA, CNRS, Universit\u00e9 Paris-Saclay, 91198 Gif-sur-Yvette, France."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0003-3964-5474"
+          }
+        ]
+      },
+      "journalInfo": {
+        "issue": "21",
+        "volume": "27",
+        "journalIssueId": 4300596,
+        "dateOfPublication": "2026 Oct",
+        "monthOfPublication": 10,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Int J Mol Sci",
+          "title": "International journal of molecular sciences",
+          "essn": "1422-0067",
+          "issn": "1422-0067",
+          "isoabbreviation": "Int J Mol Sci",
+          "nlmid": "101092791"
+        },
+        "printPublicationDate": "2026-10-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "9519",
+      "abstractText": "Cryo-electron tomography (cryo-ET) enables the three-dimensional visualization of molecular architectures within complex biological environments in a near-native state. In recent years, major advances in sample preparation, instrumentation, data acquisition, and computational processing have considerably expanded the scope of cryo-ET. Workflows that were once low-throughput and largely restricted to a small number of thin specimens and use cases can now be applied to many different samples from isolated macromolecular assemblies to cells, organoids, or tissues. In parallel, the advent of (i) automatic procedures for cryo-focused ion beam milling used for sample thinning as well as streamlined tilt series acquisition, (ii) improved methods for high-pressure-frozen specimens including lift-out, (iii) together with increasingly integrated reconstruction and processing pipelines are all contributing to improve throughput, reproducibility, and accessibility of the technique. Emerging deep learning tools further facilitate target identification, quality control with feedback loops, tomogram reconstruction, and downstream analysis by sub-tomogram averaging. Here, we discuss recent developments on different aspects of the cryo-ET workflow that are progressively bridging molecular and cellular scales in conjunction with multi-modal imaging. We also highlight current limitations and emerging technologies that may further extend cryo-ET capabilities, particularly in combination with complementary approaches toward integrative structural cell biology.",
+      "affiliation": "Okinawa Institute of Science and Technology (OIST), 1919-1 Tancha, Onna-son, Kunigami-gun, Okinawa 904-0495, Japan.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "review-article",
+          "Review",
+          "Journal Article"
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Animals"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Imaging, Three-Dimensional",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Cryoelectron Microscopy",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Image Processing, Computer-Assisted",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Electron Microscope Tomography",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Cryo-electron Tomography",
+          "Correlative Light And Electron Microscopy",
+          "Multi-modal Imaging",
+          "Integrative Structural Biology",
+          "High-resolution Microscopy",
+          "Sub-tomogram Averaging",
+          "Cellular Environment",
+          "Focused Ion Beam Milling",
+          "Mesoscale Context",
+          "Near-native Sample Preparation"
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.3390/ijms27219519"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13762918"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13762918?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCompletion": "2026-11-14",
+      "dateOfCreation": "2026-11-14",
+      "dateOfRevision": "2026-11-14",
+      "electronicPublicationDate": "2026-10-24",
+      "firstPublicationDate": "2026-10-24",
+      "firstIndexDate": "2026-11-14",
+      "fullTextReceivedDate": "2026-11-20",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42815639",
+      "source": "MED",
+      "pmid": "42815639",
+      "pmcid": "PMC13755472",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13755472"
+        ]
+      },
+      "doi": "10.1016/j.jbc.2026.113616",
+      "title": "RNA engineering approaches to aid high-resolution structure determination of medium- to large-sized RNAs.",
+      "authorString": "Tipo J, Gottipati K, Morais MC, Choi KH.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Tipo J",
+            "lastName": "Tipo",
+            "firstName": "Jerricho",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biochemistry and Molecular Biology, Sealy Center for Structural Biology, The University of Texas Medical Branch, Galveston, Texas, USA; Department of Pharmacology and Toxicology, The University of Texas Medical Branch, Galveston, Texas, USA; Department of Molecular and Cellular Biochemistry, Indiana University, Bloomington, Indiana, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gottipati K",
+            "lastName": "Gottipati",
+            "firstName": "Keerthi",
+            "initials": "K",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Molecular and Cellular Biochemistry, Indiana University, Bloomington, Indiana, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Morais MC",
+            "lastName": "Morais",
+            "firstName": "Marc C",
+            "initials": "MC",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Molecular and Cellular Biochemistry, Indiana University, Bloomington, Indiana, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Choi KH",
+            "lastName": "Choi",
+            "firstName": "Kyung H",
+            "initials": "KH",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Molecular and Cellular Biochemistry, Indiana University, Bloomington, Indiana, USA. Electronic address: kaychoi@iu.edu."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "11",
+        "volume": "302",
+        "journalIssueId": 4316731,
+        "dateOfPublication": "2026 Nov",
+        "monthOfPublication": 11,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "J Biol Chem",
+          "title": "The Journal of biological chemistry",
+          "essn": "1083-351X",
+          "issn": "0021-9258",
+          "isoabbreviation": "J Biol Chem",
+          "nlmid": "2985121R"
+        },
+        "printPublicationDate": "2026-11-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "113616",
+      "abstractText": "High-resolution structure determination of RNA remains a major challenge due to its conformational flexibility, intrinsic heterogeneity, and susceptibility to degradation. Although RNA plays central roles in gene regulation, viral replication, and cellular homeostasis, RNA-only structures represent a small fraction of entries in the Protein Data Bank. Overcoming the limitations associated with RNA has therefore required the development of innovative engineering strategies to stabilize defined conformations and facilitate structural analysis. In this review, we describe RNA engineering approaches that enable structure determination of medium- to large-sized RNAs by X-ray crystallography and cryo-EM. These advances include the use of stable tetraloops to promote proper folding and crystal packing, scaffold-based strategies employing tRNA and 5S rRNA for recombinant RNA production and stabilization, and bacteriophage \u03a629 prohead RNA as well as group I and group II intron scaffolds to facilitate cryo-EM structure determination. Together, these approaches repurpose natural RNA structural features and host processing mechanisms into practical tools for RNA stabilization, large-scale production, and structural characterization.",
+      "affiliation": "Department of Biochemistry and Molecular Biology, Sealy Center for Structural Biology, The University of Texas Medical Branch, Galveston, Texas, USA; Department of Pharmacology and Toxicology, The University of Texas Medical Branch, Galveston, Texas, USA; Department of Molecular and Cellular Biochemistry, Indiana University, Bloomington, Indiana, USA.",
+      "publicationStatus": "ppublish",
+      "language": "eng",
+      "pubModel": "Print-Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "review-article",
+          "Review",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "R01GM122979",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIAID NIH HHS",
+            "acronym": "AI",
+            "grantId": "R21 AI157336",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "R 01AI087856",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIGMS NIH HHS",
+            "acronym": "GM",
+            "grantId": "R01 GM122979",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "R21AI157336",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIAID NIH HHS",
+            "acronym": "AI",
+            "grantId": "R01 AI200842",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "R01AI200842",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIAID NIH HHS",
+            "acronym": "AI",
+            "grantId": "R01 AI087856",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "RNA",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "GE",
+                  "qualifierName": "genetics"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Cryoelectron Microscopy"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Crystallography, X-Ray"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Nucleic Acid Conformation"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Models, Molecular"
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Crystallography",
+          "RNA structure",
+          "Tetraloop",
+          "Cryo-em",
+          "Rna Engineering",
+          "Trna Scaffold",
+          "Group I Intron Scaffold",
+          "Group Ii Intron Scaffold",
+          "Prna Scaffold",
+          "Rrna Scaffold"
+        ]
+      },
+      "chemicalList": {
+        "chemical": [
+          {
+            "name": "RNA",
+            "registryNumber": "63231-63-0"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1016/j.jbc.2026.113616"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13755472"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13755472?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "pdb"
+        ]
+      },
+      "dateOfCompletion": "2026-11-19",
+      "dateOfCreation": "2026-09-30",
+      "dateOfRevision": "2026-11-20",
+      "electronicPublicationDate": "2026-09-30",
+      "firstPublicationDate": "2026-09-30",
+      "firstIndexDate": "2026-10-01",
+      "fullTextReceivedDate": "2026-11-18",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42870393",
+      "source": "MED",
+      "pmid": "42870393",
+      "pmcid": "PMC13690421",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13690421"
+        ]
+      },
+      "doi": "10.1093/bioinformatics/btag754",
+      "title": "CryoTriplane: triplane-based neural radiance field representation for high-resolution cryo-EM 3D homogeneous reconstruction.",
+      "authorString": "Cheng Y, He B, Zeng Q, Zhang F, Han R.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Cheng Y",
+            "lastName": "Cheng",
+            "firstName": "Yiran",
+            "initials": "Y",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-5311-4560"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Frontiers Science Center for Nonlinear Expectations (Ministry of Education), Research Center for Mathematics and Interdisciplinary Sciences, Qilu Hospital (Qingdao), Cheeloo College of Medicine, Shandong University, Qingdao 266237, China."
+                },
+                {
+                  "affiliation": "College of Medical Information and Engineering, Ningxia Medical University, Yinchuan 750004, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "He B",
+            "lastName": "He",
+            "firstName": "Bintao",
+            "initials": "B",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-8811-5029"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Frontiers Science Center for Nonlinear Expectations (Ministry of Education), Research Center for Mathematics and Interdisciplinary Sciences, Qilu Hospital (Qingdao), Cheeloo College of Medicine, Shandong University, Qingdao 266237, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zeng Q",
+            "lastName": "Zeng",
+            "firstName": "Qiong",
+            "initials": "Q",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Computer Science and Technology, Shandong University, Qingdao 266237, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhang F",
+            "lastName": "Zhang",
+            "firstName": "Fa",
+            "initials": "F",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-2081-9369"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Medical Technology, Beijing Institute of Technology, Beijing 100190, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Han R",
+            "lastName": "Han",
+            "firstName": "Renmin",
+            "initials": "R",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-4761-6526"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Frontiers Science Center for Nonlinear Expectations (Ministry of Education), Research Center for Mathematics and Interdisciplinary Sciences, Qilu Hospital (Qingdao), Cheeloo College of Medicine, Shandong University, Qingdao 266237, China."
+                },
+                {
+                  "affiliation": "College of Medical Information and Engineering, Ningxia Medical University, Yinchuan 750004, China."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-5311-4560"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-8811-5029"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-2081-9369"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-4761-6526"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "10",
+        "volume": "42",
+        "journalIssueId": 4277286,
+        "dateOfPublication": "2026 Oct",
+        "monthOfPublication": 10,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Bioinformatics",
+          "title": "Bioinformatics (Oxford, England)",
+          "essn": "1367-4811",
+          "issn": "1367-4803",
+          "isoabbreviation": "Bioinformatics",
+          "nlmid": "9808944"
+        },
+        "printPublicationDate": "2026-10-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "btag754",
+      "abstractText": "<h4>Motivation</h4>Determining the three-dimensional (3D) structure of proteins is a cornerstone of structural biology, providing essential insights into their underlying biological mechanisms and functional roles. Cryogenic electron microscopy (cryo-EM) single-particle analysis allows researchers to investigate biomolecules at near-atomic resolutions, unraveling the structure of biomolecular complexes. However, reconstructing high-fidelity 3D volumes from extremely noisy projections, particularly under the interference of structural heterogeneity, remains a challenging task. Traditional Fourier-domain methods often suffer from frequency-dependent signal attenuation and uneven information distribution. While recent deep-learning-based frameworks attempt to predict high-frequency components directly in frequency space, they are highly susceptible to noise and often introduce artifacts. State-of-the-art (SOTA) real-space method circumvents Fourier-domain defects, yet remains constrained by the inherent spectral bias of multi-layer perceptrons, as fixed positional encoding fails to sufficiently capture intricate high-frequency details.<h4>Results</h4>We propose cryoTriplane, a real-space 3D homogeneous reconstruction network that utilizes a hybrid spatial representation to adaptively capture fine structural details. By combining fixed positional encoding for noise-robust structural initialization with structure-aware positional encoding for high-frequency refinement, our method achieves 3D reconstructions that are simultaneously globally consistent and locally fine-grained. Comprehensive qualitative and quantitative evaluations across five simulated and four real-world datasets demonstrate that cryoTriplane significantly outperforms existing methods in resolving fine structural features. Furthermore, validation through downstream atomic modeling underscores cryoTriplane's ability to recover high-quality density maps. Specifically, our method achieves sequence coverage improvements of 4.6% and 5.5% on the EMPIAR-10005 and EMPIAR-10492 datasets over the SOTA approach, respectively.<h4>Availability and implementation</h4>Our code is available at https://github.com/chengyr1999/CryoTriplane. The real datasets used in this study are publicly available from EMPIAR.",
+      "affiliation": "Frontiers Science Center for Nonlinear Expectations (Ministry of Education), Research Center for Mathematics and Interdisciplinary Sciences, Qilu Hospital (Qingdao), Cheeloo College of Medicine, Shandong University, Qingdao 266237, China.",
+      "publicationStatus": "ppublish",
+      "language": "eng",
+      "pubModel": "Print",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "National Key Research and Development Program of China",
+            "grantId": "2021YFF0704300",
+            "orderIn": 0
+          },
+          {
+            "agency": "Fundamental Research Funds for the Central Universities, the Dubai Future Foundation",
+            "grantId": "2024CANAD-MES-061",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Proteins",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Imaging, Three-Dimensional",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Cryoelectron Microscopy",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Algorithms"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Deep Learning"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Neural Networks, Computer"
+          }
+        ]
+      },
+      "chemicalList": {
+        "chemical": [
+          {
+            "name": "Proteins",
+            "registryNumber": "0"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1093/bioinformatics/btag754"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13690421"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13690421?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "empiar",
+          "pdb"
+        ]
+      },
+      "dateOfCompletion": "2026-10-23",
+      "dateOfCreation": "2026-10-14",
+      "dateOfRevision": "2026-10-24",
+      "firstPublicationDate": "2026-10-01",
+      "firstIndexDate": "2026-10-19",
+      "fullTextReceivedDate": "2026-10-24",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PMC13742691",
+      "source": "PMC",
+      "pmcid": "PMC13742691",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13742691"
+        ]
+      },
+      "title": "Cryo-EM Reveals VP1/VP2 N-Terminal Conformations in Adeno-Associated Virus 2 Capsids",
+      "journalInfo": {
+        "journalIssueId": 4278857,
+        "dateOfPublication": "2026 Oct",
+        "monthOfPublication": 10,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "bioRxiv",
+          "title": "bioRxiv : the preprint server for biology",
+          "essn": "2692-8205",
+          "issn": "2692-8205",
+          "isoabbreviation": "bioRxiv",
+          "nlmid": "101680187"
+        },
+        "printPublicationDate": "2026-10-01"
+      },
+      "pubYear": "2026",
+      "language": "eng",
+      "pubModel": "Undetermined",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "html",
+            "site": "PubMedCentral",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13742691/?tool=EBI"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "pdf",
+            "site": "PubMedCentral",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13742691/pdf/?tool=EBI"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13742691"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13742691?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-11-07",
+      "dateOfRevision": "2026-11-07",
+      "electronicPublicationDate": "2026-10-17",
+      "firstPublicationDate": "2026-10-17",
+      "firstIndexDate": "2026-11-07",
+      "fullTextReceivedDate": "2026-11-07",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42928384",
+      "source": "MED",
+      "pmid": "42928384",
+      "pmcid": "PMC13696688",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13696688"
+        ]
+      },
+      "doi": "10.1038/s41467-026-78639-x",
+      "title": "Structural dynamics of substrate processing by the p97-Ufd1-Npl4-FAF1 machinery.",
+      "authorString": "Drakonaki A, van den Boom J, Kr\u00f6ning A, Meyer H, Gatsogiannis C.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Drakonaki A",
+            "lastName": "Drakonaki",
+            "firstName": "Athina",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7234-5540"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Medical Physics and Biophysics, University of M\u00fcnster, M\u00fcnster, Germany."
+                },
+                {
+                  "affiliation": "Center for Soft Nanoscience (SoN), University of M\u00fcnster, M\u00fcnster, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "van den Boom J",
+            "lastName": "van den Boom",
+            "firstName": "Johannes",
+            "initials": "J",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-2075-9351"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Molecular Biology I, Center of Medical Biotechnology, Faculty of Biology, University of Duisburg-Essen, Essen, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Kr\u00f6ning A",
+            "lastName": "Kr\u00f6ning",
+            "firstName": "Alexander",
+            "initials": "A",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Molecular Biology I, Center of Medical Biotechnology, Faculty of Biology, University of Duisburg-Essen, Essen, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Meyer H",
+            "lastName": "Meyer",
+            "firstName": "Hemmo",
+            "initials": "H",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-1883-1796"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Molecular Biology I, Center of Medical Biotechnology, Faculty of Biology, University of Duisburg-Essen, Essen, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gatsogiannis C",
+            "lastName": "Gatsogiannis",
+            "firstName": "Christos",
+            "initials": "C",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-4922-4545"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Medical Physics and Biophysics, University of M\u00fcnster, M\u00fcnster, Germany. christos.gatsogiannis@uni-muenster.de."
+                },
+                {
+                  "affiliation": "Center for Soft Nanoscience (SoN), University of M\u00fcnster, M\u00fcnster, Germany. christos.gatsogiannis@uni-muenster.de."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7234-5540"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-2075-9351"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-4922-4545"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-1883-1796"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "1",
+        "volume": "17",
+        "journalIssueId": 4276317,
+        "dateOfPublication": "2026 Oct",
+        "monthOfPublication": 10,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Nat Commun",
+          "title": "Nature communications",
+          "essn": "2041-1723",
+          "issn": "2041-1723",
+          "isoabbreviation": "Nat Commun",
+          "nlmid": "101528555"
+        },
+        "printPublicationDate": "2026-10-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "11081",
+      "abstractText": "The AAA-ATPase VCP/p97 unfolds ubiquitylated proteins in key signaling and cellular homeostasis pathways, yet the mechanisms by which Ufd1-Npl4 and FAF1 adapters handle ubiquitin chains to coordinate substrate loading and processing remain unclear. Our cryo-EM study of p97-Ufd1-Npl4 and FAF1 engaging a substrate reveal interactions that drive substrate processing. While Npl4 is capped by distal ubiquitins, and the initiator ubiquitin can be traced from the Npl4 groove to the ATPase channel at near-atomic resolution, we find that the Npl4 tower adaptively responds to the configurational changes in the ATPase motor's spiral staircase. A helix in FAF1 together with the Ufd1-UT3 domain engage proximal ubiquitins while providing the necessary structural plasticity to accommodate this motion and deliver ubiquitins to Npl4's groove. Our study reveals the intricate, dynamic interplay between p97, Ufd1-Npl4, and FAF1 in efficient processing of ubiquitylated substrates.",
+      "affiliation": "Institute of Medical Physics and Biophysics, University of M\u00fcnster, M\u00fcnster, Germany.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "Research Support, Non-U.S. Gov't",
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Deutsche Forschungsgemeinschaft (German Research Foundation)",
+            "grantId": "CRC1430, 424228829",
+            "orderIn": 0
+          },
+          {
+            "agency": "Deutsche Forschungsgemeinschaft (German Research Foundation)",
+            "grantId": "509479817",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Intracellular Signaling Peptides and Proteins"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Adaptor Proteins, Signal Transducing",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "GE",
+                  "qualifierName": "genetics"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Nucleocytoplasmic Transport Proteins",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Nuclear Proteins",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "GE",
+                  "qualifierName": "genetics"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Ubiquitin",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Cryoelectron Microscopy"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Protein Binding"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Substrate Specificity"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Models, Molecular"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Apoptosis Regulatory Proteins"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Adenosine Triphosphatases",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Ubiquitination"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Valosin Containing Protein",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "chemicalList": {
+        "chemical": [
+          {
+            "name": "p97 ATPase",
+            "registryNumber": "EC 3.6.1.-"
+          },
+          {
+            "name": "FAF1 protein, human",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Nuclear Proteins",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Intracellular Signaling Peptides and Proteins",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Nucleocytoplasmic Transport Proteins",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Adaptor Proteins, Signal Transducing",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Ubiquitin",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Apoptosis Regulatory Proteins",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Adenosine Triphosphatases",
+            "registryNumber": "EC 3.6.1.-"
+          },
+          {
+            "name": "Valosin Containing Protein",
+            "registryNumber": "EC 3.6.4.6"
+          },
+          {
+            "name": "UFD1 protein, human",
+            "registryNumber": "0"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1038/s41467-026-78639-x"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13696688"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13696688?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "gen",
+          "uniprot",
+          "pdb",
+          "doi"
+        ]
+      },
+      "dateOfCompletion": "2026-10-26",
+      "dateOfCreation": "2026-10-26",
+      "dateOfRevision": "2026-10-28",
+      "electronicPublicationDate": "2026-10-25",
+      "firstPublicationDate": "2026-10-25",
+      "firstIndexDate": "2026-10-26",
+      "fullTextReceivedDate": "2026-10-27",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42918765",
+      "source": "MED",
+      "pmid": "42918765",
+      "pmcid": "PMC13690744",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13690744"
+        ]
+      },
+      "doi": "10.1038/s41467-026-77741-4",
+      "title": "Ghost Neuron preparation unlocks high-resolution structural mapping of intracellular architecture in axons.",
+      "authorString": "Bodakuntla S, Marelli J, Vasquez-Montes V, Glauser S, Biert\u00fcmpfel C, Mizuno N.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Bodakuntla S",
+            "lastName": "Bodakuntla",
+            "firstName": "Satish",
+            "initials": "S",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory of Structural Cell Biology, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Marelli J",
+            "lastName": "Marelli",
+            "firstName": "Julia",
+            "initials": "J",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0001-0343-9364"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory of Structural Cell Biology, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Vasquez-Montes V",
+            "lastName": "Vasquez-Montes",
+            "firstName": "Victor",
+            "initials": "V",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7593-7293"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory of Structural Cell Biology, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Glauser S",
+            "lastName": "Glauser",
+            "firstName": "Simon",
+            "initials": "S",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich, Department of Chemistry and Applied Biosciences, Institute of Pharmaceutical Sciences, Z\u00fcrich, Switzerland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Biert\u00fcmpfel C",
+            "lastName": "Biert\u00fcmpfel",
+            "firstName": "Christian",
+            "initials": "C",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-7528-6547"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory of Structural Cell Biology, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Mizuno N",
+            "lastName": "Mizuno",
+            "firstName": "Naoko",
+            "initials": "N",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-1594-2821"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory of Structural Cell Biology, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA. naoko.mizuno@nih.gov."
+                },
+                {
+                  "affiliation": "National Institute of Arthritis and Musculoskeletal and Skin Diseases, National Institutes of Health, Bethesda, MD, USA. naoko.mizuno@nih.gov."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7593-7293"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-1594-2821"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-7528-6547"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0001-0343-9364"
+          }
+        ]
+      },
+      "journalInfo": {
+        "issue": "1",
+        "volume": "17",
+        "journalIssueId": 4251531,
+        "dateOfPublication": "2026 Sep",
+        "monthOfPublication": 9,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Nat Commun",
+          "title": "Nature communications",
+          "essn": "2041-1723",
+          "issn": "2041-1723",
+          "isoabbreviation": "Nat Commun",
+          "nlmid": "101528555"
+        },
+        "printPublicationDate": "2026-09-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "11049",
+      "abstractText": "Cellular cryo-electron microscopy (cryo-EM) offers powerful tools to reveal molecular architecture inside cells, but dense cytoplasm often obscures fine molecular features, especially in narrow neuronal projections. Here, we introduce the Ghost Neuron technique, a preparation combining brief hypotonic treatment with controlled mechanical rupture immediately before freezing, facilitating high-contrast imaging of neuronal ultrastructure within its neurite topology. By removing the plasma membrane and reducing cytoplasmic density, the method allows high-resolution structural analysis while preserving the overall geometry of neurites. The method allows structural information to be mapped back onto neuronal architecture. The preparation also releases endogeneous macromolecular complexes onto EM grids, creating particle-rich regions suitable for high-resolution structural analysis. Using Ghost Neuron, we resolved axonal microtubules at 3.59\u00a0\u00c5 and 3.9\u00a0\u00c5 resolution, distinguishing expanded and compact lattice states, and mapped these states as interspersed patches along individual microtubules within axons. We also resolved axonal actin filaments and identified cofilin-decorated actin. These results establish Ghost Neuron as a discovery platform for linking molecular structure to neuronal organization.",
+      "affiliation": "Laboratory of Structural Cell Biology, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article",
+          "Research Support, N.I.H., Extramural"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Intramural NIH HHS",
+            "acronym": "ImNIH",
+            "grantId": "ZIA HL006264",
+            "orderIn": 0
+          },
+          {
+            "agency": "U.S. Department of Health &amp; Human Services | NIH | National Heart, Lung, and Blood Institute (NHLBI)",
+            "grantId": "1ZIAHL006264",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Neurons",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Neurites",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Axons",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Microtubules",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Animals"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Cryoelectron Microscopy",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Actin Cytoskeleton",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "UL",
+                  "qualifierName": "ultrastructure"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1038/s41467-026-77741-4"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13690744"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13690744?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCompletion": "2026-10-23",
+      "dateOfCreation": "2026-10-23",
+      "dateOfRevision": "2026-10-26",
+      "electronicPublicationDate": "2026-09-23",
+      "firstPublicationDate": "2026-09-23",
+      "firstIndexDate": "2026-10-25",
+      "fullTextReceivedDate": "2026-10-24",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PMC13635751",
+      "source": "PMC",
+      "pmcid": "PMC13635751",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13635751"
+        ]
+      },
+      "title": "Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "18",
+        "volume": "54",
+        "journalIssueId": 4277851,
+        "dateOfPublication": "2026 Oct",
+        "monthOfPublication": 10,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Nucleic Acids Res",
+          "title": "Nucleic acids research",
+          "essn": "1362-4962",
+          "issn": "0305-1048",
+          "isoabbreviation": "Nucleic Acids Res",
+          "nlmid": "0411011"
+        },
+        "printPublicationDate": "2026-10-01"
+      },
+      "pubYear": "2026",
+      "language": "eng",
+      "pubModel": "Undetermined",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "html",
+            "site": "PubMedCentral",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13635751/?tool=EBI"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "pdf",
+            "site": "PubMedCentral",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13635751/pdf/?tool=EBI"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13635751"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13635751?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "uniprot",
+          "pdb",
+          "doi"
+        ]
+      },
+      "dateOfCreation": "2026-10-06",
+      "dateOfRevision": "2026-10-06",
+      "electronicPublicationDate": "2026-10-05",
+      "firstPublicationDate": "2026-10-05",
+      "firstIndexDate": "2026-10-06",
+      "fullTextReceivedDate": "2026-10-06",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42551829",
+      "source": "MED",
+      "pmid": "42551829",
+      "pmcid": "PMC13545438",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13545438"
+        ]
+      },
+      "doi": "10.1016/j.jbc.2026.113389",
+      "title": "Clamp conformational flexibility and dynamics in archaeal and eukaryotic RNA polymerases revealed by cryo-EM.",
+      "authorString": "Fordjour GNR, Palao L, Murakami K, Armache JP, Murakami KS.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Fordjour GNR",
+            "lastName": "Fordjour",
+            "firstName": "George N R",
+            "initials": "GNR",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-8560-0798"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biochemistry and Molecular Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Structural Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for RNA Molecular Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Eukaryotic Gene Regulation, Penn State University, University Park, Pennsylvania, USA; Molecular Machines Mechanism and Structure Predoctoral Training Program, Penn State University, University Park, Pennsylvania, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Palao L 3rd",
+            "lastName": "Palao",
+            "firstName": "Leon",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biochemistry and Biophysics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Murakami K",
+            "lastName": "Murakami",
+            "firstName": "Kenji",
+            "initials": "K",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biochemistry and Biophysics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Armache JP",
+            "lastName": "Armache",
+            "firstName": "Jean-Paul",
+            "initials": "JP",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biochemistry and Molecular Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Structural Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Eukaryotic Gene Regulation, Penn State University, University Park, Pennsylvania, USA. Electronic address: jza449@psu.edu."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Murakami KS",
+            "lastName": "Murakami",
+            "firstName": "Katsuhiko S",
+            "initials": "KS",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biochemistry and Molecular Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Structural Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for RNA Molecular Biology, Penn State University, University Park, Pennsylvania, USA. Electronic address: kum14@psu.edu."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-8560-0798"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-2145-758X"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-2244-0501"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "9",
+        "volume": "302",
+        "journalIssueId": 4269813,
+        "dateOfPublication": "2026 Sep",
+        "monthOfPublication": 9,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "J Biol Chem",
+          "title": "The Journal of biological chemistry",
+          "essn": "1083-351X",
+          "issn": "0021-9258",
+          "isoabbreviation": "J Biol Chem",
+          "nlmid": "2985121R"
+        },
+        "printPublicationDate": "2026-09-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "113389",
+      "abstractText": "All cellular RNA polymerases (RNAPs) across Bacteria, Archaea, and Eukarya share a conserved catalytic core, yet bacterial and archaeal-eukaryotic RNAPs diverged after separation from the last universal common ancestor. This evolutionary split produced distinct subunit compositions and fundamentally different requirements for external factors during transcription initiation. Bacterial RNAP relies on a \u03c3 factor, whereas archaeal-eukaryotic RNAPs require a more extensive set of general transcription factors (GTFs) to bind promoter DNA, unwind the duplex, and position the template strand within the active site cleft. Notably, despite the close structural similarity between archaeal and eukaryotic RNAPs, the requirement for GTFs became further specialized after the emergence of Eukarya. This divergence raises the question of whether differences in intrinsic conformational flexibility and dynamics of these RNAPs contribute to distinct promoter-loading pathways. In this study, we addressed this question using cryo-electron microscopy (cryo-EM) to examine archaeal RNAPs from Euryarchaeota and Crenarchaeota alongside yeast RNAP II. Archaeal RNAP displays a highly dynamic DNA binding clamp domain that samples a broad spectrum of open and closed states, whereas RNAP II predominantly adopts a closed clamp state. Both archaeal and eukaryotic RNAPs can be found in stalk-bound and stalk-less forms. Comparative structural analyses further reveal a unique conformational transition in crenarchaeal RNAP associated with clamp opening. Together, these findings define the intrinsic clamp-conformational landscapes across the archaeal-eukaryotic lineage and suggest that evolutionary tuning of clamp flexibility and dynamics contributes to distinct GTF-dependent promoter-loading mechanisms.",
+      "affiliation": "Department of Biochemistry and Molecular Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Structural Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for RNA Molecular Biology, Penn State University, University Park, Pennsylvania, USA; Huck Institutes of the Life Sciences, Center for Eukaryotic Gene Regulation, Penn State University, University Park, Pennsylvania, USA; Molecular Machines Mechanism and Structure Predoctoral Training Program, Penn State University, University Park, Pennsylvania, USA.",
+      "publicationStatus": "ppublish",
+      "language": "eng",
+      "pubModel": "Print-Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "NIGMS NIH HHS",
+            "acronym": "GM",
+            "grantId": "R01 GM123233",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIGMS NIH HHS",
+            "acronym": "GM",
+            "grantId": "T32 GM149417",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIGMS NIH HHS",
+            "acronym": "GM",
+            "grantId": "R35 GM161751",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIH HHS",
+            "acronym": "OD",
+            "grantId": "S10 OD026822",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institute of General Medical Sciences",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIGMS NIH HHS",
+            "acronym": "GM",
+            "grantId": "R35 GM156623",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Archaea",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "EN",
+                  "qualifierName": "enzymology"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "DNA-Directed RNA Polymerases",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ME",
+                  "qualifierName": "metabolism"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "CH",
+                  "qualifierName": "chemistry"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Cryoelectron Microscopy"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Protein Conformation"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Models, Molecular"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Eukaryota",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "EN",
+                  "qualifierName": "enzymology"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Cryo-electron microscopy",
+          "Structural Biology",
+          "Conformational Dynamics",
+          "Compositional Heterogeneity",
+          "Promoter Complex",
+          "In Silico Purification",
+          "Cellular Rna Polymerase"
+        ]
+      },
+      "chemicalList": {
+        "chemical": [
+          {
+            "name": "DNA-Directed RNA Polymerases",
+            "registryNumber": "EC 2.7.7.6"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1016/j.jbc.2026.113389"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13545438"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13545438?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "pdb"
+        ]
+      },
+      "dateOfCompletion": "2026-09-22",
+      "dateOfCreation": "2026-08-04",
+      "dateOfRevision": "2026-09-22",
+      "electronicPublicationDate": "2026-08-04",
+      "firstPublicationDate": "2026-08-04",
+      "firstIndexDate": "2026-08-05",
+      "fullTextReceivedDate": "2026-09-13",
+      "hasEvaluations": "N"
+    }
+  ]
+}

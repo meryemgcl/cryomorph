@@ -1,0 +1,27 @@
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Large Cryo-EM datasets (Do not commit binary micrographs)
+*.mrc
+*.mrcs
+*.star
+*.map
+*.tif
+*.tiff
+*.h5
+*.pt
+
+# OS specific
+.DS_Store
+Thumbs.db
